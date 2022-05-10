@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Budget Planner</title>
+</head>
+<body style="background-image:url('bg.jpg'); background-repeat:no-repeat; background-attachment: fixed;
+background-size: cover;";>
+<center>
+<div id="header" style="background-color:black;">
+    <h1 style="color:rgb(245, 203, 152);">BUDGET CALCULATOR</h1>
+    
+</div>
+</center>
+  <center>
+      <div id="entry" style="background-color:gainsboro";>
+          <label > Name of expense : </label>
+          <input type="text" name="name" id="name" value="">
+          <br>
+          <label > Cost of expense : </label>
+          <input type="number" name="cost" id="cost" value=""><br><hr>
+      </div>
+<button type="button" name="button" onclick="sum()">Click here</button><br><hr>
+<center>
+  <div style="background-color:whitesmoke";>
+      <label id="printHello"></label>
+  </div>
+  
+
+</center>
+</center>
+
+<script>
+   var y=0;
+   function sum(){
+var x = Number(document.getElementById("cost").value);
+y=y+x;
+
+//y=Number(y)+Number(x);  
+//document.getElementById("printHello").innerHTML ="the sum is: "+typeof(y);  
+document.getElementById("printHello").innerHTML ="the total expenditure is: "+y ;
+}
+</script>
+</body>
+</html>
